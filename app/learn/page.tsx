@@ -1,14 +1,15 @@
 export default function LearnPage() {
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-semibold">Learn</h1>
-      <p className="text-gray-700">
-        Here you will find educational articles and tips about blenderized tube feeding.
+    <div className="max-w-3xl mx-auto py-10 px-6 space-y-4">
+      <h1 className="text-3xl font-bold text-hbk-slate dark:text-hbk-oat">Learn</h1>
+      <p className="text-lg text-slate-700 dark:text-slate-300">
+        Discover educational articles and tips about blenderized tube feeding. We aim to empower
+        caregivers with knowledge and practical advice.
       </p>
-      <ul className="list-disc list-inside space-y-1">
-        <li>What affects flow? (coming soon)</li>
-        <li>Bolus vs pump (coming soon)</li>
-        <li>Ingredient safety basics (coming soon)</li>
+      <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+        <li>What affects flow? <span className="italic">(coming soon)</span></li>
+        <li>Bolus vs pump <span className="italic">(coming soon)</span></li>
+        <li>Ingredient safety basics <span className="italic">(coming soon)</span></li>
       </ul>
     </div>
   );

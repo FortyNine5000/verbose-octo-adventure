@@ -5,11 +5,12 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-semibold">Privacy Policy</h1>
-      <p className="text-gray-700">
-        Home Blend Kitchen is a local‑first MVP. We do not collect personal data on this site. Saved
-        blends are stored locally in your browser (for example in localStorage).
+    <div className="max-w-3xl mx-auto py-10 px-6 space-y-4">
+      <h1 className="text-3xl font-bold text-hbk-slate dark:text-hbk-oat">Privacy Policy</h1>
+      <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300">
+        Home Blend Kitchen is built with privacy in mind. We don’t require accounts or logins,
+        and we never send your data off of your device. Blends you create are stored in your
+        browser using localStorage and never transmitted to our servers.
       </p>
     </div>
   );

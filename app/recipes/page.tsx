@@ -26,31 +26,38 @@ export default function RecipesPage() {
   }, [recipes, ingredients, query]);
 
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-semibold">Recipe Library</h1>
+    <div className="max-w-6xl mx-auto py-10 px-6 space-y-6">
+      <h1 className="text-3xl font-bold text-hbk-slate dark:text-hbk-oat">Recipe Library</h1>
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search recipes..."
-        className="border rounded px-3 py-2 w-full max-w-sm"
+        placeholder="Search recipes…"
+        className="border border-slate-300 dark:border-slate-700 rounded px-3 py-2 w-full max-w-md text-hbk-slate dark:text-hbk-oat bg-white dark:bg-slate-800 placeholder-slate-500"
       />
-      <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map((recipe) => (
-          <li key={recipe.id} className="border rounded p-4">
-            <h3 className="font-semibold text-lg">{recipe.name}</h3>
-            <p className="text-sm text-gray-700">{recipe.description}</p>
+          <li
+            key={recipe.id}
+            className="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-900 shadow-sm flex flex-col justify-between"
+          >
+            <div>
+              <h3 className="font-semibold text-lg text-hbk-slate dark:text-hbk-oat">
+                {recipe.name}
+              </h3>
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+                {recipe.description}
+              </p>
+            </div>
             <Link
               href={`/recipes/${recipe.id}`}
-              className="text-blue-600 underline inline-block mt-2"
+              className="mt-4 text-hbk-teal hover:underline font-medium"
             >
               View details
             </Link>
           </li>
         ))}
-        {filtered.length === 0 && (
-          <li>No recipes found.</li>
-        )}
+        {filtered.length === 0 && <li>No recipes found.</li>}
       </ul>
     </div>
   );

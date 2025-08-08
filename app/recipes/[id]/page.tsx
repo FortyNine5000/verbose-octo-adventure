@@ -16,9 +16,9 @@ export default function RecipeDetailPage() {
 
   if (!recipe) {
     return (
-      <div className="border p-4 rounded">
-        <h1 className="text-xl font-semibold">Recipe not found</h1>
-        <Link href="/recipes" className="text-blue-600 underline mt-2 inline-block">
+      <div className="max-w-3xl mx-auto py-10 px-6 border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-900">
+        <h1 className="text-2xl font-bold text-hbk-slate dark:text-hbk-oat">Recipe not found</h1>
+        <Link href="/recipes" className="mt-4 inline-block text-hbk-teal hover:underline">
           Back to recipes
         </Link>
       </div>
@@ -26,27 +26,29 @@ export default function RecipeDetailPage() {
   }
 
   return (
-    <div className="space-y-4">
-      <Link href="/recipes" className="text-blue-600 underline">
+    <div className="max-w-3xl mx-auto py-10 px-6 space-y-6">
+      <Link href="/recipes" className="text-hbk-teal hover:underline">
         &larr; Back to recipes
       </Link>
-      <h1 className="text-2xl font-semibold">{recipe.name}</h1>
-      <p className="text-gray-700">{recipe.description}</p>
-      <h2 className="text-lg font-semibold mt-4">Ingredients</h2>
-      <ul className="list-disc list-inside space-y-1">
-        {recipe.ingredients.map((item: any) => {
-          const ing = ingredients.find((i) => i.id === item.id);
-          return (
-            <li key={item.id}>
-              {ing ? ing.name : item.id}: {item.grams}g
-            </li>
-          );
-        })}
-      </ul>
+      <h1 className="text-3xl font-bold text-hbk-slate dark:text-hbk-oat">{recipe.name}</h1>
+      <p className="text-lg text-slate-700 dark:text-slate-300">{recipe.description}</p>
+      <div>
+        <h2 className="text-2xl font-semibold mt-6 text-hbk-slate dark:text-hbk-oat">Ingredients</h2>
+        <ul className="mt-2 list-disc list-inside space-y-1 text-slate-700 dark:text-slate-300">
+          {recipe.ingredients.map((item: any) => {
+            const ing = ingredients.find((i) => i.id === item.id);
+            return (
+              <li key={item.id}>
+                {ing ? ing.name : item.id}: {item.grams}g
+              </li>
+            );
+          })}
+        </ul>
+      </div>
       {recipe.notes && (
         <div>
-          <h3 className="font-semibold mt-4">Notes</h3>
-          <p className="text-gray-700">{recipe.notes}</p>
+          <h3 className="text-xl font-semibold mt-6 text-hbk-slate dark:text-hbk-oat">Notes</h3>
+          <p className="mt-1 text-slate-700 dark:text-slate-300">{recipe.notes}</p>
         </div>
       )}
     </div>
