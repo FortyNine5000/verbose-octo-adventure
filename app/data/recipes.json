@@ -1,0 +1,33 @@
+[
+  {
+    "id": "glow-up-carrot-quinoa",
+    "name": "Glow Up Carrot + Quinoa",
+    "tags": [
+      "pediatric-friendly",
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "id": "carrot_raw",
+        "grams": 150
+      },
+      {
+        "id": "quinoa_cooked",
+        "grams": 120
+      },
+      {
+        "id": "apple_raw",
+        "grams": 80
+      },
+      {
+        "id": "coconut_milk",
+        "grams": 60
+      },
+      {
+        "id": "ginger_fresh",
+        "grams": 5
+      }
+    ],
+    "notes": "Bright, beta-carotene forward. Add water to desired consistency."
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "carrot_raw",
+    "name": "Carrot (raw)",
+    "category": "veg",
+    "kcal_per_100g": 41,
+    "protein_g_per_100g": 0.9,
+    "fat_g_per_100g": 0.2,
+    "carb_g_per_100g": 9.6,
+    "fiber_g_per_100g": 2.8,
+    "notes": "Beta-carotene rich"
+  },
+  {
+    "id": "quinoa_cooked",
+    "name": "Quinoa (cooked)",
+    "category": "grain",
+    "kcal_per_100g": 120,
+    "protein_g_per_100g": 4.4,
+    "fat_g_per_100g": 1.9,
+    "carb_g_per_100g": 21.3,
+    "fiber_g_per_100g": 2.8
+  }
+]
