@@ -1,0 +1,12 @@
+[
+  {
+    "id": "sample-blend",
+    "name": "Sample Blend",
+    "description": "A simple sample blend using carrots and quinoa.",
+    "ingredients": [
+      { "id": "carrot_raw", "grams": 100 },
+      { "id": "quinoa_cooked", "grams": 100 }
+    ],
+    "notes": "Add water to desired consistency."
+  }
+]

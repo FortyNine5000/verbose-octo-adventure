@@ -1,0 +1,53 @@
+[
+  {
+    "id": "carrot_raw",
+    "name": "Carrot (raw)",
+    "category": "veg",
+    "kcal_per_100g": 41,
+    "protein_g_per_100g": 0.9,
+    "fat_g_per_100g": 0.2,
+    "carb_g_per_100g": 9.6,
+    "fiber_g_per_100g": 2.8,
+    "notes": "Beta-carotene rich"
+  },
+  {
+    "id": "quinoa_cooked",
+    "name": "Quinoa (cooked)",
+    "category": "grain",
+    "kcal_per_100g": 120,
+    "protein_g_per_100g": 4.4,
+    "fat_g_per_100g": 1.9,
+    "carb_g_per_100g": 21.3,
+    "fiber_g_per_100g": 2.8
+  },
+  {
+    "id": "apple_raw",
+    "name": "Apple (raw)",
+    "category": "fruit",
+    "kcal_per_100g": 52,
+    "protein_g_per_100g": 0.3,
+    "fat_g_per_100g": 0.2,
+    "carb_g_per_100g": 14,
+    "fiber_g_per_100g": 2.4
+  },
+  {
+    "id": "coconut_milk",
+    "name": "Coconut milk",
+    "category": "dairy-alt",
+    "kcal_per_100g": 20,
+    "protein_g_per_100g": 0.2,
+    "fat_g_per_100g": 1.5,
+    "carb_g_per_100g": 1.5,
+    "fiber_g_per_100g": 0.2
+  },
+  {
+    "id": "ginger_fresh",
+    "name": "Ginger (fresh)",
+    "category": "spice",
+    "kcal_per_100g": 80,
+    "protein_g_per_100g": 1.8,
+    "fat_g_per_100g": 0.8,
+    "carb_g_per_100g": 18,
+    "fiber_g_per_100g": 2
+  }
+]
